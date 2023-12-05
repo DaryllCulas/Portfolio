@@ -12,6 +12,11 @@
 
     <!--Favicons-->
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.css"
+    />
+
     <title>Personal Portfolio</title>
   </head>
   <body>
@@ -23,6 +28,12 @@
         <li><a href="#skills" class="nav-link">SKILLS</a></li>
         <li><a href="#projects" class="nav-link">PROJECTS</a></li>
         <li><a href="#contact" class="nav-link">CONTACT</a></li>
+        <!-- Replace this line in your HTML -->
+        <li id="dark-mode-li">
+          <button id="dark-mode-toggle" class="icon-button">
+            <ion-icon name="moon-outline"></ion-icon> <span></span>
+          </button>
+        </li>
       </ul>
       <button class="burger-menu" id="burger-menu">
         <ion-icon class="bars" name="menu-outline"></ion-icon>
@@ -345,5 +356,6 @@
     ></script>
     <script src="/js/scroll_upward.js"></script>
     <script src="/js/hamburgerIconMenu.js"></script>
+    <script src="/js/darkMode.js"></script>
   </body>
 </html>

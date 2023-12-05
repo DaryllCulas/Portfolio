@@ -45,8 +45,8 @@ a:hover {
 
 body {
   font-family: var(--font-family);
-  background: rgb(2,0,36);
-  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(252,249,249,0.6615021008403361) 0%, rgba(152,241,202,1) 100%);
+  /* background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(252,249,249,0.6615021008403361) 0%, rgba(152,241,202,1) 100%); */
 }
 
 section {
@@ -116,6 +116,7 @@ nav ul li {
   height: 37.5rem;
   width: 37.5rem;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  margin-bottom: 2rem;
 }
 
 .bio {
@@ -139,6 +140,7 @@ nav ul li {
 .more-about {
   background-color: var(--bg-color);
   padding: 1rem 6rem;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
 .more-about h2 {
@@ -176,8 +178,8 @@ nav ul li {
 
 /* Projects section */
 .projects {
-  background-color: var(--bg-color);
-  padding: 32px 0;
+
+  padding: 40px 0;
   margin-top: 2rem;
 }
 
@@ -220,6 +222,7 @@ nav ul li {
 /* Contacts section */
 .contact {
   margin-top: 2rem;
+  
 }
 
 .contact h2 {
@@ -232,7 +235,8 @@ nav ul li {
   margin: 0 auto;
   padding: 0.938rem;
   border-radius: 5px;
-  box-shadow: 0 4px 10px var(--secondary-shadow);
+  box-shadow: 0 4px 14px var(--secondary-shadow);
+  
 }
 
 .contact-form-container label {
@@ -426,6 +430,7 @@ footer {
   .hero img {
     height: 37.5rem;
     width: 23rem;
+   
   }
 
   .bio {
@@ -439,4 +444,37 @@ footer {
   .contact-form-container {
     max-width: 17.75rem;
   }
+}
+
+
+
+/* Dark mode css */
+
+
+body.dark-mode {
+  background-color: #222;
+  color: #000000;
+}
+
+/* Exclude certain elements from dark mode styling */
+body.dark-mode h2,
+body.dark-mode .bio-text,
+body.dark-mode .skills,
+body.dark-mode .projects,
+body.dark-mode .contact {
+  /* Set the background color for these elements in dark mode */
+  color: white; /* Set the text color for these elements in dark mode */
+}
+
+
+body.dark-mode .more-about h2,
+body.dark-mode .project-title,
+body.dark-mode .project-details {
+  color: black;
+}
+
+button {
+  padding: 13px 13px;
+  border-radius: 15px;
+  border: 2px solid blue;
 }
