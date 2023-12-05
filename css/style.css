@@ -48,8 +48,8 @@ body {
 }
 
 section {
-  /* max-width: 1100px;
-  margin: auto; */
+   max-width: 1100px;
+  margin: auto; 
 }
 
 /* CSS Resets end */
@@ -113,6 +113,7 @@ nav ul li {
 .hero img {
   height: 37.5rem;
   width: 37.5rem;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
 .bio {
@@ -399,16 +400,20 @@ footer {
 
   .projects-container {
     flex-direction: column;
+ 
   }
 
   .project-container {
     width: 20.875rem;
   }
+  .project-card {
+    margin: 30px;
+  }
 
   .contact-form-container {
     max-width: 23.75rem;
   }
-
+  
  
 }
 
