@@ -45,6 +45,8 @@ a:hover {
 
 body {
   font-family: var(--font-family);
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(252,249,249,0.6615021008403361) 0%, rgba(152,241,202,1) 100%);
 }
 
 section {
@@ -230,7 +232,7 @@ nav ul li {
   margin: 0 auto;
   padding: 0.938rem;
   border-radius: 5px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  box-shadow: 0 4px 10px var(--secondary-shadow);
 }
 
 .contact-form-container label {
@@ -242,6 +244,7 @@ nav ul li {
 .contact-form-container textarea {
   min-height: 6.25rem;
   font-size: 14px;
+ 
 }
 
 .contact-form-container .input-field {
@@ -253,11 +256,13 @@ nav ul li {
   border: 2px outset var(--primary-color);
   font-size: 0.875rem;
   outline: none;
+  padding-left: 10px;
 }
 
 .input-field::placeholder {
-  padding: 0.5rem;
+  padding: 1rem;
   color: var(--primary-color);
+ 
 }
 
 .submit-btn {
