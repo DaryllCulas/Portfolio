@@ -302,6 +302,23 @@
         </div>
       </div>
     </section>
+    <div class="resume-buttons">
+      <button id="viewResumeButton" class="button">View Resume</button>
+      <button id="downloadResumeButton" class="button">Download Resume</button>
+    </div>
+
+    <!-- Add a modal container -->
+    <div id="resumeModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe
+          id="resumeViewer"
+          width="100%"
+          height="100%"
+          frameborder="0"
+        ></iframe>
+      </div>
+    </div>
 
     <!-- Social accounts - Fixed to the right -->
     <div class="socials">
@@ -345,9 +362,22 @@
       </p>
     </footer>
 
+    <!-- Add this after your contact form -->
+
     <!-- Website scripts -->
-    <script type="module" src="/js/ionicons.esm.js"></script>
-    <script nomodule src="/js/ionicons.js"></script>
+    <!-- <script type="module" src="/js/ionicons.esm.js"></script>
+    <script type="nomodule" src="/js/ionicons.js"></script> -->
+    <script src="/js/resumeClicker.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      type="nomodule"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <script src="/js/scroll_upward.js"></script>
     <script src="/js/hamburgerIconMenu.js"></script>
     <script src="/js/darkMode.js"></script>

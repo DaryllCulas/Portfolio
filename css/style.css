@@ -65,7 +65,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 3.5rem;
+  padding: 1.5rem 3rem;
   background-color: var(--bg-color);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
@@ -474,7 +474,65 @@ body.dark-mode .project-details {
 }
 
 button {
-  padding: 13px 13px;
+  padding: 10px 8px;
   border-radius: 15px;
   border: 2px solid blue;
+}
+
+
+/* Stylesheet for resume functionality */
+
+/* Add this to the end of your existing CSS */
+.resume-buttons {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-right: 10px; /* Add space between buttons */
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* for modal content of view resume functionality */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  position: relative;
+  margin: 10% auto;
+  padding: 30px;
+  width: 85%;
+  max-width: 800px;
+  background-color: #fff;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
 }
