@@ -1,31 +1,16 @@
-// // Add this to your existing JavaScript code
-// const viewResumeButton = document.getElementById("viewResumeButton");
-// const downloadResumeButton = document.getElementById("downloadResumeButton");
-
-// viewResumeButton.addEventListener("click", () => {
-//   const pdfViewerUrl = "https://mozilla.github.io/pdf.js/web/viewer.html?file=path/to/your/resume.pdf";
-//   window.open(pdfViewerUrl, "_blank");
-// });
-
-// downloadResumeButton.addEventListener("click", () => {
-//   const resumePdfUrl = "path/to/your/resume.pdf";
-//   window.location.href = resumePdfUrl;
-// });
-
-// Add this to your existing JavaScript code
 const resumeModal = document.getElementById("resumeModal");
 const resumeViewer = document.getElementById("resumeViewer");
 const viewResumeButton = document.getElementById("viewResumeButton");
 const downloadResumeButton = document.getElementById("downloadResumeButton");
 
 viewResumeButton.addEventListener("click", () => {
-  const pdfViewerUrl = "https://mozilla.github.io/pdf.js/web/viewer.html?file=path/to/your/resume.pdf";
+  const pdfViewerUrl = "/ResumeConverted.pdf";
   resumeViewer.src = pdfViewerUrl;
   resumeModal.style.display = "block";
 });
 
 downloadResumeButton.addEventListener("click", () => {
-  const resumePdfUrl = "path/to/your/resume.pdf";
+  const resumePdfUrl = "/ResumeConverted.pdf";
   window.location.href = resumePdfUrl;
 });
 

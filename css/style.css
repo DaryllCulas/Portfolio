@@ -521,10 +521,11 @@ button {
 
 .modal-content {
   position: relative;
-  margin: 10% auto;
+  margin: 8% auto;
   padding: 30px;
   width: 85%;
-  max-width: 800px;
+  max-width: 2000px;
+  height: 1000px;
   background-color: #fff;
 }
 
